@@ -1,0 +1,28 @@
+
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='globals.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='IBR/IBR.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='FDS/FDS.css') }}">
+
+    </head>
+    <body>
+
+        <header>
+            <div class="navbar">
+                <h1>File Management System</h1>
+                <nav>
+                    <a href="/FDS">FDS</a>
+                    <a href="/IBR">IBR</a>
+                </nav>
+            </div>
+        </header>
+
+        <h1>{% block title %} {% endblock %}</h1>
+        <div id="blockContent">{% block content %}
+            {% endblock %}
+        </div>
+        
+    </body>
+    
+</html>
